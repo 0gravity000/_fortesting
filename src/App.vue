@@ -1,16 +1,24 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+		<Navbar />
   </div>
   <router-view/>
-	<LeftSideber />
-	<MainContents />
+	<div class="container">
+	<div class="columns">
+		<div class="column is-one-third">
+			<LeftSideber />
+		</div>
+		<div class="column">
+			<MainContents />
+		</div>
+	</div>
+	</div>
 	<Footer />
 </template>
 
 <script>
 // @ is an alias to /src
+import Navbar from '@/components/Navbar.vue'
 import MainContents from '@/components/MainContents.vue'
 import LeftSideber from '@/components/LeftSideber.vue'
 import Footer from '@/components/Footer.vue'
@@ -18,6 +26,7 @@ import Footer from '@/components/Footer.vue'
 export default {
   name: 'App',
   components: {
+		Navbar,
 		MainContents,
 		LeftSideber,
     Footer
