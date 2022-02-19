@@ -4,7 +4,26 @@
     <router-link to="/about">About</router-link>
   </div>
   <router-view/>
+	<LeftSideber />
+	<MainContents />
+	<Footer />
 </template>
+
+<script>
+// @ is an alias to /src
+import MainContents from '@/components/MainContents.vue'
+import LeftSideber from '@/components/LeftSideber.vue'
+import Footer from '@/components/Footer.vue'
+
+export default {
+  name: 'App',
+  components: {
+		MainContents,
+		LeftSideber,
+    Footer
+  }
+}
+</script>
 
 <style>
 #app {
