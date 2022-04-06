@@ -1,6 +1,6 @@
 <template>
   <div class="maincontents">
-    <h1>maincontents</h1>
+	<router-view/>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
 	},
   props: {
     msg: String
-  }
+  },
 }
 </script>
 

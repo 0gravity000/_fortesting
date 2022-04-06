@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import PermutationAndCombinationInPlayingcard from '../views/PermutationAndCombination/PermutationAndCombinationInPlayingcard.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/permutation-and-combination-in-playingcard',
+    name: 'PermutationAndCombinationInPlayingcard',
+    component: PermutationAndCombinationInPlayingcard
   },
   {
     path: '/about',
